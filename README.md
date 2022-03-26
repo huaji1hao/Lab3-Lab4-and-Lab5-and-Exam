@@ -6,7 +6,7 @@
 
 使用方法：点击右上角绿色的code，然后download ZIP
 
-需要TeXWork的Beamer的运行环境，就是一堆包
+需要TeXeworks的Beamer的运行环境，需要安装一堆包
 
 点击lab3.tex运行该程序
 
