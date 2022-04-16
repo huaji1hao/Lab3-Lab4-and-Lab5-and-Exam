@@ -1,0 +1,153 @@
+Q1
+
+clear all
+clc
+x=10:10:100;
+ssX=0;
+for i=1:10
+   y(i)=x(i)^2; 
+   ssX=ssX+y(i);
+end
+ssX=sqrt(ssX);
+sprintf('the value of ssX is %0.5f',ssX)
+
+
+
+
+
+Q2
+
+clear all
+clc
+V=ceil(1000*rand(1,100));
+wn=1;un=1;U=zeros(1,100);W=zeros(1,100);
+for i=1:100
+    if  mod(V(i),2)==0
+        U(un)=V(i);
+        un=un+1;
+    else 
+        W(wn)=V(i);
+        wn=wn+1;
+    end
+end
+wn=wn-1;un=un-1;
+sprintf('There are %d even numbers and %d odd numbers',un,wn)
+
+
+
+
+
+Q3
+
+clear all
+clc
+n=input('Please enter a positive integer n > 5 :');
+M=1000+ceil(1000*rand(n));
+primeCount=0;
+for i=1:n
+   for j=1:n
+       if isprime(M(i,j))
+           primeCount=primeCount+1;
+       end
+   end
+end
+if primeCount==0
+    sprintf('there are no prime numbers')
+elseif primeCount==1 
+    sprintf('there is just one prime number')
+else
+    sprintf('there are %d prime numbers',primeCount)
+end
+
+
+
+
+
+Q4
+
+clear all
+clc
+res='Y';
+while res=='Y'
+    rows=input('Enter the number of rows:');
+    columns=input('Enter the number of columns:');
+    A=zeros(rows,columns);
+    for i=1:rows
+       for j=1:columns
+          if i<j
+              A(i,j)=i/(i+j);
+          elseif i == j
+              A(i,j)=i*j;
+          else
+              A(i,j)=sqrt(i-j);
+          end
+       end
+    end
+    A
+    res=input('Would you like to try again? [Y/N]','s');
+end
+
+
+
+
+
+Q5
+
+clear all
+clc
+x=[0,-1,1,3,-5];
+y=[-1,2,0,-3,4];
+t=zeros(5);
+for i=1:5
+   for j=1:5
+       t(i,j)=sqrt((x(i)-x(j))*(x(i)-x(j))+(y(i)-y(j))*(y(i)-y(j))); 
+   end
+end
+disp(t)
+
+
+
+
+
+Q6
+
+clear all
+clc
+res='YES';
+while res=='YES'
+    n=input('Please enter a positive number n > 2 :');
+    x=zeros(n);
+    for i=1:n
+       for j=1:n
+          if i==j
+              x(i,j)=n;
+          elseif i==j+1
+              x(i,j)=n-1;
+          elseif j==i+1
+              x(i,j)=n+1;
+          end
+       end
+    end
+    disp(x)
+    res=input('Would you like to play again? [YES/NOO]','s');
+end
+
+
+
+
+
+Q7
+
+clear all
+clc
+n=input('Please enter a positive integer n > 1 : ');
+fac=1;
+while n>1
+    fac=fac*n;
+    n=n-1;
+end
+disp(fac)
+
+
+
+
