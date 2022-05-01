@@ -4,7 +4,11 @@
 
 请用于学习用途
 
-使用方法：点击右上角绿色的code，然后download ZIP
+使用方法：
+
+1. 直接点击文件偷窥代码 |･ω･｀)
+
+2. 点击右上角绿色的code，然后download ZIP
 
 lab3需要TeXeworks的Beamer的运行环境，需要安装一堆包
 
