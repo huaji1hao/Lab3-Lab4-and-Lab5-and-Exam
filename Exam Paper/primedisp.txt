@@ -4,10 +4,10 @@ function A=primedisp(p)
         A=[A,2];
     end
     for i=2:p
-        for j=2:i-1
+        for j=2:ceil(sqrt(i))
             if ~mod(i,j) break;
             end
-            if j==i-1
+            if j==ceil(sqrt(i))
                 A=[A,i];
             end
         end
