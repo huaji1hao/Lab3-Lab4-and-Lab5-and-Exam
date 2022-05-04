@@ -1,0 +1,69 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+\usepackage{amsmath,amssymb}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\title{Two Interesting Curves}
+\author{20411885}
+\date{\today}
+\begin{document}
+
+\begin{frame}\label{1a}
+\titlepage
+\end{frame}
+
+
+\begin{frame}\frametitle{Table of Contents}\label{2a}
+\tableofcontents
+
+\end{frame}
+
+\section{Two Curves}
+\begin{frame}\frametitle{Two Curves}\label{3a}
+
+\begin{columns}
+\column{0.5\textwidth}<1->
+
+\begin{eqnarray}
+f(x)=&(\sin x+\cos x)*(\cos x-2)\nonumber\\
+g(x)=&e^{2\sin x}\nonumber
+\end{eqnarray}
+
+
+\column{0.5\textwidth}<2->
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.4]{twoPlots}
+\caption{Two Curves}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+
+\section{Observations}
+\begin{frame}\frametitle{Obversations}\label{4a}
+
+\begin{block}<1->
+{Points of Intersection}{State how many points of intersection are there.}
+\end{block}
+\begin{block}<2->
+{Question}{State how you can determine the points of intersection.}
+\end{block}
+\begin{block}<3->
+{Min/Max}{ State what can be said about maximum and minimum
+points of $f$ and $g$}
+\end{block}
+\end{frame}
+\section{Summary}
+\begin{frame}\frametitle{Summary}
+
+\hyperlink{1a}{\beamergotobutton{Title}}\\
+\hyperlink{2a}{\beamergotobutton{Table of Contents}}\\
+\hyperlink{3a}{\beamergotobutton{Two Curves}}\\
+\hyperlink{4a}{\beamergotobutton{Obversations}}\\
+
+\end{frame}
+\end{document} 

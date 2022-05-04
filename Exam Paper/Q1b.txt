@@ -1,0 +1,33 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\begin{itemize}
+\item[1)]Motivation:\\
+Write a few lines about the purpose of your computertation in 1(a)
+\item[2)]Explanation:\\
+Explain(briefly) why $\int_{0}^{1}f(x)dx$ is used for finding $\pi$
+\item[3)]Numerical caculations:\\
+Create the following Table to summarise your numerical findings.
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+No of rectangles(n)&myPI(10 d.p.)&Absolute error (10 d.p)\\
+\hline
+\hline
+n=50&1.580762928&1.560829726\\
+\hline
+n=100&1.5775787937&1.565804717\\
+\hline
+n=150&1.574125893&1.567466760\\
+\hline
+n=200&1.573294181&1.568298472\\
+\hline
+
+\end{tabular}
+\caption{Numerical calculations}
+\end{table}
+\end{itemize}
+
+
+\end{document} 
