@@ -1,0 +1,18 @@
+function C=primelist(p,q)
+    A=primedisp(p);
+    B=primedisp(q-1);
+    C=B;
+    n=sum(size(A))-1;
+    for i=1:n
+        C(:,1)=[];
+    end
+    for i=2:p-1
+        if ~mod(p,i)
+            break;
+        end
+        C=[p,C];
+    end
+    if p==2
+        C=[2,C];
+    end
+end

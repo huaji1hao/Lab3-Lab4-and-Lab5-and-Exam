@@ -1,0 +1,23 @@
+function primecheck
+rep='Y';
+while rep=='Y'
+    p=input('Please enter a positive integer > 1: ');
+    A=primelist(2,p);
+    n=sum(size(A))-1;
+    flag=0;
+    for i=1:n
+        if ~mod(p,A(i))
+            break;
+        end
+        if i==n
+            flag=1;
+        end
+    end
+if flag==1
+    sprintf('%d is a prime number',p)
+elseif flag==0
+    sprintf('%d is not a prime number',p)
+end
+   rep=input('Would you like to test another number[Y/N]?','s');
+end
+end

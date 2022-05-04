@@ -1,0 +1,15 @@
+function A=primedisp(p)
+    A=[];
+    if p>=2
+        A=[A,2];
+    end
+    for i=2:p
+        for j=2:i-1
+            if ~mod(i,j) break;
+            end
+            if j==i-1
+                A=[A,i];
+            end
+        end
+    end
+end
