@@ -1,4 +1,4 @@
-# Lab3,Lab4 and Lab5 and Exam Matlab-and-Latex
+# Lab3,Lab4 and Lab5 and Exam
 
 # <table><tr><td bgcolor=#D1EEEE>抄题解是不对的QAQ</td></tr></table>
 
